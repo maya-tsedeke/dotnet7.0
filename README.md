@@ -16,12 +16,24 @@ Create a new .NET Web API project: Open Visual Studio Code and create a new fold
 
 2. Navigate to the each sub folders that you crrated and create the dotnet projects inside the subproject project inside
 
+        dotnet new sln  
         cd webapi
         dotnet new webapi --no-https
         cd ..
         dotnet new classlib -o Domain
         dotnet new classlib -o Application
         dotnet new classlib -o Infrastructure
+3. Add to your web Api projects to your solution that you created in the first line 
+        dotnet sln add webapi/webapi.csproj 
+        dotnet sln add Domin/Domain.csproj 
+        dotnet sln add Application/Application.csproj 
+        dotnet sln add Infrastructure/Infrastructure.csproj 
+3. Add project references in your Web API projects to your domain, application, and infrastructure projects. This can be done by adding the following lines to the .csproj file of your Web API project:
+        dotnet add webapi/api.csproj reference Infrastructure/Infrastructure.csproj
+        dotnet add webapi/api.csproj reference Applications/Applications.csproj
+        dotnet add Applications/Applications.csproj reference Domain/Domain.csproj
+        dotnet add Infrastructure/Infrastructure.csproj reference Domain/Domain.csproj
+
 
 Run the Web API project: Run the command dotnet run to start the Web API project. The project will run on http://localhost:5000.
 
