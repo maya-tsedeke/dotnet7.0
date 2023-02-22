@@ -8,6 +8,7 @@ In a clean architecture implementation, the application is divided into four mai
 2. Application layer
 3. Domain layer
 4. Infrastructure layer
+
 The Presentation layer is responsible for handling user requests and returning responses, which includes rendering views, handling HTTP requests and responses, and providing the API endpoints.
 
 The Application layer is responsible for implementing the use cases of the application. It interacts with the Domain layer to coordinate the execution of business rules and ensure consistency between the use cases.
