@@ -22,6 +22,85 @@ In a .NET clean architecture implementation, you would typically create a separa
 The Domain layer is the most important layer, as it defines the core logic of the application. This layer should be designed in such a way that it can be easily understood and modified without affecting other layers. The Application layer should provide a thin wrapper around the Domain layer, exposing only the necessary functionality for the Presentation layer to use.
 
 The Infrastructure layer should be designed to be easily replaceable, allowing you to switch out one database for another, for example. This can be achieved by creating interfaces for the functionality that the Infrastructure layer provides, and then having multiple implementations of those interfaces. This way, you can easily switch between different implementations by swapping out the appropriate implementation in the dependency injection container.
+#### Basic project folder structure for Electronic medical information management system using dotnet7 and React technology
+
+        Integrify-s-Project/
+        ├── Integrify-s-Project.sln
+        ├── Presentation/
+        │   ├── Integrify-s-Project.WebAPI/
+        │   │   ├── Controllers/
+        │   │   ├── Startup.cs
+        │   │   └── ...
+        │   ├── Frontend/ (replaced by React technology)
+        │   └── ...
+        ├── Application/
+        │   ├── Interfaces/
+        │   ├── Services/
+        │   │   ├── AuthenticationService.cs
+        │   │   ├── PrescriptionService.cs
+        │   │   ├── ReportService.cs
+        │   │   ├── LabService.cs
+        │   │   ├── DoctorService.cs
+        │   │   ├── NurseService.cs
+        │   │   ├── DiagnosisService.cs
+        │   │   ├── MedicalHistoryService.cs
+        │   │   └── ...
+        │   ├── Application.csproj
+        │   └── ...
+        ├── Domain/
+        │   ├── Entities/
+        │   │   ├── User.cs
+        │   │   ├── Prescription.cs
+        │   │   ├── Report.cs
+        │   │   ├── Lab.cs
+        │   │   ├── Doctor.cs
+        │   │   ├── Nurse.cs
+        │   │   ├── Diagnosis.cs
+        │   │   ├── MedicalHistory.cs
+        │   │   └── ...
+        │   ├── Interfaces/
+        │   │   ├── IRepository.cs
+        │   │   ├── IUserRepository.cs
+        │   │   ├── IPrescriptionRepository.cs
+        │   │   ├── IReportRepository.cs
+        │   │   ├── ILabRepository.cs
+        │   │   ├── IDoctorRepository.cs
+        │   │   ├── INurseRepository.cs
+        │   │   ├── IDiagnosisRepository.cs
+        │   │   ├── IMedicalHistoryRepository.cs
+        │   │   └── ...
+        │   ├── Domain.csproj
+        │   └── ...
+        └── Infrastructure/
+            ├── DataContext/
+            │   ├── Integrify-s-ProjectDbContext.cs
+            │   ├── SeedData.cs
+            │   └── ...
+            ├── Repositories/
+            │   ├── UserRepository.cs
+            │   ├── PrescriptionRepository.cs
+            │   ├── ReportRepository.cs
+            │   ├── LabRepository.cs
+            │   ├── DoctorRepository.cs
+            │   ├── NurseRepository.cs
+            │   ├── DiagnosisRepository.cs
+            │   ├── MedicalHistoryRepository.cs
+            │   └── ...
+            ├── Interfaces/
+            │   ├── IDbFactory.cs
+            │   ├── IUnitOfWork.cs
+            │   ├── IUserUnitOfWork.cs
+            │   ├── IPrescriptionUnitOfWork.cs
+            │   ├── IReportUnitOfWork.cs
+            │   ├── ILabUnitOfWork.cs
+            │   ├── IDoctorUnitOfWork.cs
+            │   ├── INurseUnitOfWork.cs
+            │   ├── IDiagnosisUnitOfWork.cs
+            │   ├── IMedicalHistoryUnitOfWork.cs
+            │   └── ...
+            ├── Infrastructure.csproj
+            └── ...
+
 Install the necessary tools: Install Visual Studio Code, .NET Core SDK, and Node.js on your machine.
 
 Create a new .NET Web API project: Open Visual Studio Code and create a new folder for your project. Open the terminal in Visual Studio Code and navigate to the project folder. Run the command dotnet new webapi to create a new .NET Web API project.
