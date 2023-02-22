@@ -1,8 +1,26 @@
-# dotnet7.0
+# dotnet7.0 backend based on Clean Architecture layers and react technology for Frontend 
 These are the general steps you can follow to create a .NET Web API with a React frontend. There are various tools and libraries available that can make the process easier and more efficient, depending on your specific needs and preferences.
 
 Here are the steps to create a .NET Web API with a React frontend using Visual Studio Code:
+In a clean architecture implementation, the application is divided into four main layers:
 
+1. Presentation layer (Web API, MVC, Razor Pages, etc.)
+2. Application layer
+3. Domain layer
+4. Infrastructure layer
+The Presentation layer is responsible for handling user requests and returning responses, which includes rendering views, handling HTTP requests and responses, and providing the API endpoints.
+
+The Application layer is responsible for implementing the use cases of the application. It interacts with the Domain layer to coordinate the execution of business rules and ensure consistency between the use cases.
+
+The Domain layer contains the core logic of the application, including business rules, entities, and domain services. It is the most critical layer of the application and should not have any dependencies on other layers.
+
+The Infrastructure layer is responsible for implementing the technical details of the application, such as database access, caching, and third-party APIs. It implements the interfaces defined in the Domain layer and provides the necessary functionality for the application to operate.
+
+In a .NET clean architecture implementation, you would typically create a separate project for each layer. The Web API would be the Presentation layer, and the Application, Domain, and Infrastructure layers would be separate projects. You would then reference the appropriate layers in each project, with the Presentation layer referencing the Application layer and so on.
+
+The Domain layer is the most important layer, as it defines the core logic of the application. This layer should be designed in such a way that it can be easily understood and modified without affecting other layers. The Application layer should provide a thin wrapper around the Domain layer, exposing only the necessary functionality for the Presentation layer to use.
+
+The Infrastructure layer should be designed to be easily replaceable, allowing you to switch out one database for another, for example. This can be achieved by creating interfaces for the functionality that the Infrastructure layer provides, and then having multiple implementations of those interfaces. This way, you can easily switch between different implementations by swapping out the appropriate implementation in the dependency injection container.
 Install the necessary tools: Install Visual Studio Code, .NET Core SDK, and Node.js on your machine.
 
 Create a new .NET Web API project: Open Visual Studio Code and create a new folder for your project. Open the terminal in Visual Studio Code and navigate to the project folder. Run the command dotnet new webapi to create a new .NET Web API project.
