@@ -32,8 +32,8 @@ Create a new .NET Web API project: Open Visual Studio Code and create a new fold
 
 4. Add project references in your Web API projects to your domain, application, and infrastructure projects. This can be done by adding the following lines to the .csproj file of your Web API project:
 
-        dotnet add webapi/api.csproj reference Infrastructure/Infrastructure.csproj
-        dotnet add webapi/api.csproj reference Applications/Applications.csproj
+        dotnet add webapi/webapi.csproj reference Infrastructure/Infrastructure.csproj
+        dotnet add webapi/webapi.csproj reference Applications/Applications.csproj
         dotnet add Applications/Applications.csproj reference Domain/Domain.csproj
         dotnet add Infrastructure/Infrastructure.csproj reference Domain/Domain.csproj
 
