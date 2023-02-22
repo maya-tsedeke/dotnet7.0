@@ -7,18 +7,22 @@ Install the necessary tools: Install Visual Studio Code, .NET Core SDK, and Node
 
 Create a new .NET Web API project: Open Visual Studio Code and create a new folder for your project. Open the terminal in Visual Studio Code and navigate to the project folder. Run the command dotnet new webapi to create a new .NET Web API project.
 1. Open a new terminal window in Visual Studio Code and navigate to the folder you just created. Then create the folowing empty subfolders for Clean architecture dotnet7 projects
-    mkdir webapi
-    mkdir Domain
-    mkdir Application
-    mkdir Infrastructure
-    mkdir Client 
+
+        mkdir webapi
+        mkdir Domain
+        mkdir Application
+        mkdir Infrastructure
+        mkdir Client 
+
 2. Navigate to the each sub folders that you crrated and create the dotnet projects inside the subproject project inside
-    cd webapi
-    dotnet new webapi --no-https
-    cd ..
-    dotnet new classlib -o Domain
-    dotnet new classlib -o Application
-    dotnet new classlib -o Infrastructure
+
+        cd webapi
+        dotnet new webapi --no-https
+        cd ..
+        dotnet new classlib -o Domain
+        dotnet new classlib -o Application
+        dotnet new classlib -o Infrastructure
+
 Run the Web API project: Run the command dotnet run to start the Web API project. The project will run on http://localhost:5000.
 
 Create a new React app: Open a new terminal window and navigate to the project folder. Run the command npx create-react-app client to create a new React app.
