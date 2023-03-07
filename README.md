@@ -135,6 +135,9 @@ Create a new .NET Web API project: Open Visual Studio Code and create a new fold
         dotnet add Applications/Applications.csproj reference Domain/Domain.csproj
         dotnet add Infrastructure/Infrastructure.csproj reference Domain/Domain.csproj
 
+To install React use the following command to install Dashboard App | React, Material UI, Data Grid, Light & Dark Mode packages 
+
+        npm i @mui/material @emotion/react @emotion/styled @mui/x-data-grid @mui/icons-material react-router-dom@6 react-pro-sidebar formik yup @fullcalendar/core @fullcalendar/daygrid @fullcalendar/timegrid @fullcalendar/list @nivo/core @nivo/pie @nivo/line @nivo/bar @nivo/geo @fullcalendar/interaction @fullcalendar/react
 
 Run the Web API project: Run the command dotnet run to start the Web API project. The project will run on http://localhost:5000.
 

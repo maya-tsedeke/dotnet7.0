@@ -1,8 +1,13 @@
 C:\Users\tshabe\Documents\GitHub\Integrify-s-Project\Infrastructure\bin\Debug\net7.0\Infrastructure.deps.json
+C:\Users\tshabe\Documents\GitHub\Integrify-s-Project\Infrastructure\bin\Debug\net7.0\Infrastructure.runtimeconfig.json
 C:\Users\tshabe\Documents\GitHub\Integrify-s-Project\Infrastructure\bin\Debug\net7.0\Infrastructure.dll
 C:\Users\tshabe\Documents\GitHub\Integrify-s-Project\Infrastructure\bin\Debug\net7.0\Infrastructure.pdb
+C:\Users\tshabe\Documents\GitHub\Integrify-s-Project\Infrastructure\bin\Debug\net7.0\Applications.dll
 C:\Users\tshabe\Documents\GitHub\Integrify-s-Project\Infrastructure\bin\Debug\net7.0\Domain.dll
+C:\Users\tshabe\Documents\GitHub\Integrify-s-Project\Infrastructure\bin\Debug\net7.0\Kernel.dll
+C:\Users\tshabe\Documents\GitHub\Integrify-s-Project\Infrastructure\bin\Debug\net7.0\Applications.pdb
 C:\Users\tshabe\Documents\GitHub\Integrify-s-Project\Infrastructure\bin\Debug\net7.0\Domain.pdb
+C:\Users\tshabe\Documents\GitHub\Integrify-s-Project\Infrastructure\bin\Debug\net7.0\Kernel.pdb
 C:\Users\tshabe\Documents\GitHub\Integrify-s-Project\Infrastructure\obj\Debug\net7.0\Infrastructure.csproj.AssemblyReference.cache
 C:\Users\tshabe\Documents\GitHub\Integrify-s-Project\Infrastructure\obj\Debug\net7.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\tshabe\Documents\GitHub\Integrify-s-Project\Infrastructure\obj\Debug\net7.0\Infrastructure.AssemblyInfoInputs.cache
@@ -12,4 +17,5 @@ C:\Users\tshabe\Documents\GitHub\Integrify-s-Project\Infrastructure\obj\Debug\ne
 C:\Users\tshabe\Documents\GitHub\Integrify-s-Project\Infrastructure\obj\Debug\net7.0\Infrastructure.dll
 C:\Users\tshabe\Documents\GitHub\Integrify-s-Project\Infrastructure\obj\Debug\net7.0\refint\Infrastructure.dll
 C:\Users\tshabe\Documents\GitHub\Integrify-s-Project\Infrastructure\obj\Debug\net7.0\Infrastructure.pdb
+C:\Users\tshabe\Documents\GitHub\Integrify-s-Project\Infrastructure\obj\Debug\net7.0\Infrastructure.genruntimeconfig.cache
 C:\Users\tshabe\Documents\GitHub\Integrify-s-Project\Infrastructure\obj\Debug\net7.0\ref\Infrastructure.dll
