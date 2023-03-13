@@ -8,7 +8,7 @@ builder.Services.AddInfrastructureServices(builder.Configuration);
 builder.Services.AddWebUIServices();
 
 var app = builder.Build();
-
+//No need to use isabsol
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
