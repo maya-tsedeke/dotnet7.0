@@ -20,7 +20,7 @@ public static class ConfigureServices
 
         services.AddHealthChecks()
             .AddDbContextCheck<ApplicationDbContext>();
-
+        //Corrected
 #pragma warning disable CS0618 // Type or member is obsolete
         services.AddControllersWithViews(options =>
             options.Filters.Add<ApiExceptionFilterAttribute>())
