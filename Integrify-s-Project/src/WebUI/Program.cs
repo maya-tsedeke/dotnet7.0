@@ -1,4 +1,6 @@
+using System;
 using Integrify_s_Project.Infrastructure.Persistence;
+using static System.Net.Mime.MediaTypeNames;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,7 +10,7 @@ builder.Services.AddInfrastructureServices(builder.Configuration);
 builder.Services.AddWebUIServices();
 
 var app = builder.Build();
-//No need to use isabsol
+//csharp - dotnet7 - test
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
