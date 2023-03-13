@@ -22,8 +22,9 @@ jobs:
         run: dotnet build ./Integrify-s-Project/Integrify-s-Project.sln --configuration Release --no-restore
       - name: Publish
         run: dotnet publish ./Integrify-s-Project/Integrify-s-Project.sln --configuration Release --no-build --output '${{env.AZURE_WEBAPP_PACKAGE_PATH}}'
-      - name: Deployment
-        uses: actions/webapps-deploy@v2
+      - name: Azure WebApps Preview Deploy
+        uses: sethreidnz/azure-webapps-preview-deploy@v0.1.0
+
         with: 
           app-name: "${{env.AZURE_WEBAPP_NAME}}"
           publish-profile: ${{secrets.AZURE_PUBLISH_PROFILE}}
