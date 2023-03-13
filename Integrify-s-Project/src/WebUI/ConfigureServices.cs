@@ -21,9 +21,11 @@ public static class ConfigureServices
         services.AddHealthChecks()
             .AddDbContextCheck<ApplicationDbContext>();
 
+#pragma warning disable CS0618 // Type or member is obsolete
         services.AddControllersWithViews(options =>
             options.Filters.Add<ApiExceptionFilterAttribute>())
                 .AddFluentValidation(x => x.AutomaticValidationEnabled = false);
+#pragma warning restore CS0618 // Type or member is obsolete
 
         services.AddRazorPages();
 
