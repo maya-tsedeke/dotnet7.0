@@ -16,8 +16,8 @@ jobs:
       - name: Restore
         run: dotnet restore ./Integrify-s-Project.sln
       - name: Build
-        run: dotnet build ./Integrify-s-Project.sln --configuration Release --no-restore
+        run: dotnet build ./Integrify-s-Project/Integrify-s-Project.sln --configuration Release --no-restore
       - name: Publish
-        run: dotnet publish ./Integrify-s-Project.sln --configuration Release --no-build
+        run: dotnet publish ./Integrify-s-Project/Integrify-s-Project.sln --configuration Release --no-build
         
       
